@@ -160,7 +160,7 @@ The hyperparameters are detailed as follows:
 - `--cost_type`: The cost function used in Eq. (5), choices include `kl_cost` (our proposed KL divergence cost in Eq. (S11)) and `md_cost` (Mahalanobis cost in Eq. (S12)).
 - `--beta`: The scaling factor $\beta$ for the cost function.
 
-_Note: See [`run_command.sh`](run_command.sh) for the running commands of SVHN dataset._
+_Note: See [`run_commands.sh`](run_commands.sh) for the running commands of SVHN dataset._
 
 **Output:** The outputs will be saved in the directory `/output/{cost_type}/{dataset}_(ctx)gan/`.
 
@@ -312,7 +312,7 @@ Here, hyperparameter `--ctx_dataset` is used to specify different empirical cont
 python run_inference.py --dataset cifar10 --cost_type md_cost --ctx_dataset none
 ```
 
-_Note: See [`run_command.sh`](run_command.sh) for the running commands of SVHN dataset._
+_Note: See [`run_commands.sh`](run_commands.sh) for the running commands of SVHN dataset._
 
 **Output:** The outputs will be saved in the directory `/output/{cost_type}/{dataset}_(ctx){ctx_dataset}/`, where the BNN classifier is named as `model_epoch_20.pth`.
 
